@@ -1,0 +1,22 @@
+<h1 class="container text-center bg-warning" [ngClass]="'h1'">Programming Book Container</h1>
+
+<div class="container">
+    <table class="table table-bordered w-75 p-5" style="margin:auto" [ngClass]="'t'">
+        <tr class="container text-align-center"  [ngClass]="'c2'">
+            <th>Book Id</th>
+            <th>Book Name</th>
+            <th>Book Author</th>
+            <th>Book Price</th>
+            <th>BookImg</th>
+        </tr>
+        <tr class="container"  *ngFor="let i of Book_info " [ngClass]="'c1'">
+            <td>{{i.bookId}}</td>
+            <td>{{i.bookName}}</td>
+            <td>{{i.bookAuthor}}</td>
+            <td>{{i.price}}</td>
+            <td><img [src]="i.bookImg" width="100px" height="100px"></td>
+        </tr>
+    </table>
+
+</div>
+

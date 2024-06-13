@@ -1,0 +1,17 @@
+<h1 class="container text-center">This is Directive Component..</h1>
+<div *ngFor="let i of Student">
+    <p *ngIf="i.roll_no>102"  [ngStyle]="{'color':'hotpink'}" [ngClass]="'s'">{{i.name}} {{i.roll_no}}</p>
+    <!-- <p  class="container"   *ngIf="i.city=='mumbai'" [ngClass]="'s'">{{i.name}} {{i.city}}</p> -->
+</div>   
+ 
+    <div class="container">
+    <ul *ngFor="let i of Student">
+        <li [ngClass]="{'text-danger':i.city=='pune',
+                        'text-success':i.city=='mumbai',
+                       
+                        }">{{i.name}} {{i.city}}</li>
+    
+    </ul>
+</div>
+
+

@@ -1,0 +1,71 @@
+<h1 class="container text-center"  >Property Binding</h1>
+<hr>
+<h4 class="container">Show All Book Details</h4>
+<div class="container">
+    <table class="container text-align:text-center">
+    <tr class="container text-center bg-info">
+        <th>BookId</th>
+        <th>BookName</th>
+        <th>BookPrice</th>
+        <th>BookQty</th>
+    </tr>
+<tr *ngFor="let i of Book">
+    <td><ul class="list-group"><li class="list-group-item list-group-item-warning">{{i.bookId}}</li></ul></td>
+    <td><ul class="list-group"><li class="list-group-item list-group-item-success">{{i.bookName}}</li></ul></td>
+    <td><ul class="list-group"><li class="list-group-item list-group-item-info">{{i.price}}</li></ul></td>
+    <td><ul class="list-group"><li class="list-group-item list-group-item-warning">{{i.qty}}</li></ul></td>
+</tr>
+</table>
+</div>
+<hr>
+<h4>Show Books which has only price above 300</h4>
+<div class="container">
+    <ul *ngFor="let i of Book">
+        <li *ngIf="i.price>300">{{i.bookName}} {{i.price}}</li>
+    </ul>
+</div>
+<hr>
+<!-- <h4>Show Books Using ngSwitchCase</h4>
+<div class="container">
+    <ul *ngFor="let i of Book" [ngSwitch]="i.bookName">
+        <li *ngSwitchCase="'java programming'" class="text-success">{{i.bookName}} {{i.author}}</li>
+        <li *ngSwitchCase="'c programming'" class="text-info">{{i.bookName}} {{i.author}}</li>
+        <li *ngSwitchCase="'python programming'" class="text-primary">{{i.bookName}} {{i.author}}</li>
+        <li *ngSwitchCase="'php programming'" class="text-danger">{{i.bookName}} {{i.author}}</li>
+        
+        <li *ngSwitchDefault class="text-danger">{{i.bookName}} {{i.author}}</li>
+
+
+    </ul>
+</div> -->
+
+<hr>
+<h4>Show Book Images</h4>
+<div class="img-container">
+    <div class="img-container">
+    <p>Java Book</p>
+    <img [src]="imgJava">
+    </div>
+    <div class="img-container">
+    <p>Android Book</p>
+    <img [src]="imgAndroid">
+    </div>
+    <div class="img-container">
+    <p>Python Book</p>
+    <img [src]="imgpython">
+</div>
+<!-- </div>
+<div [ngSwitch]="day">
+    <div *ngSwitchCase="'monday'" class="text-success">there is a monday</div>
+    <div *ngSwitchCase="'thuesday'">there is a thuesday</div>
+    <div *ngSwitchCase="'wendsday'">there is a wendsday</div>
+    <div *ngSwitchCase="'thursday'">there is a wendsday</div>
+    <div *ngSwitchCase="'friday'">there is a friday</div>
+    <div *ngSwitchDefault>Enter proper</div>
+
+
+</div> -->
+
+
+
+

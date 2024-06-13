@@ -1,0 +1,25 @@
+.h1{
+
+    color: rgb(100, 129, 129);
+    text-decoration: underline;
+    
+}
+.c1{
+
+    text-align: center;
+    text-wrap:pretty;
+    
+    color: white;
+}
+.c2{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.t{
+
+    border-style: double;
+    background-color:dimgrey
+    
+
+}

@@ -1,0 +1,17 @@
+<h1 class="container text-center bg-info">This Is User Component</h1>
+<div>
+<table class="table table-bordered w-75 p-5" style="margin:auto">
+<tr class="container text-center bg-primary">
+<th>Uid</th>
+<th>Username</th>
+<th>Email</th>
+<th>Password</th>
+</tr>
+<tr class="container text-center bg-warning text-black" *ngFor="let i of user_info">
+    <td>{{i.uid}}</td>
+    <td>{{i.uname}}</td>
+    <td>{{i.email}}</td>
+    <td>{{i.password}}</td>
+</tr>
+</table>
+</div>

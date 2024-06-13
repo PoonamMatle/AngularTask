@@ -1,0 +1,74 @@
+<!-- <!-- <h1>Data Types in Type Script</h1>
+<p>Title:-{{title}}</p>
+<p>Number:-{{num}}</p>
+<p>String:-{{str}}</p>
+<p>Value Boolean:-{{val}}</p>
+<p>Message:-{{msg}}</p>
+<p>Any Type:-{{txt}}</p> -->
+<!-- <hr>
+
+<hr>
+<app-product></app-product>
+<hr>
+<app-course></app-course>
+<hr> -->
+<!-- <app-directive-comp></app-directive-comp> -->
+<!-- <hr>
+<app-bindingcomp></app-bindingcomp> -->
+<!-- <app-user></app-user> -->
+<!-- <hr>
+<app-book-container></app-book-container> -->
+<!-- <app-event-binding></app-event-binding> -->
+<!-- **********Routing******** -->
+<!-- <app-food-iteam></app-food-iteam>
+<hr>
+<app-product-items></app-product-items>
+<hr>
+<app-tka></app-tka> -->
+<!-- <h1 class="container bg-info">Routing</h1>
+<br><br>
+<div class="container">
+    <a [routerLink]="['/fooditeam']">Food Items</a>.......................
+    <a [routerLink]="['/productitem']">Product Items</a>.......................
+    <a [routerLink]="['/tka']">TKA</a>.........................
+    <a [routerLink]="['/help']">Help</a>.......................
+    <a [routerLink]="['/student']">Student</a>.......................
+    <br><br><br>
+    <button class="btn btn-primary" (click)="load()">Load</button>
+    <router-outlet></router-outlet>
+
+
+</div> -->
+
+<!-- ****************Routing + Services********** -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/product']">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Student</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Employee</a>
+          </li>
+          
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>

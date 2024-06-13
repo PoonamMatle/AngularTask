@@ -1,0 +1,16 @@
+<h1>Food Items</h1>
+<div class="container">
+    <table class="table table-bordered w-75 p-12" style="margin:auto">
+        <tr class="container text-align-center" [ngClass]="'trr'" text color="white" >
+            <td>Food Id</td>
+            <td>Food Name</td>
+            <td>Food Img</td>
+        </tr>
+        <tr class="container"  *ngFor="let i of FoodItems">
+            <td>{{i.foodId}}</td>
+            <td>{{i.foodName}}</td>
+            <td><img [src]="i.img" width="80px" height="80px"></td>
+        </tr>
+    </table>
+
+</div>

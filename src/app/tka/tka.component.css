@@ -1,0 +1,17 @@
+h1{
+
+    text-align: center;
+    color:blue;
+    text-decoration:underline
+}
+p{
+    text-align: center;
+    /* color: hotpink; */
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    background: #cce5ff;
+    color: darkblue;
+    margin: 5px;
+    
+}
